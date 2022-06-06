@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## makeCacheMatrix gives the right type of matrix to perform the required problem 
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -18,10 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
-
-
+# cachesolve allows us to perform the inverse of the matrix 
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
@@ -38,8 +35,12 @@ cacheSolve <- function(x, ...) {
   m
 }
 
+# this is another function to get the inverse 
 
 inv <- function(mat){
   m <- mat^(-1) 
   m 
 }
+
+# To run the program, take an initial function A and run > cacheSolve(makeCacheMatrix(A))
+
